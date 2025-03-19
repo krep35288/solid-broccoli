@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Топ ботов для пробива в Telegram | 2025</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Roboto', sans-serif;
+            background: linear-gradient(135deg, #0a0a0a 0%, #1c2526 100%);
+            color: #ffffff;
+            line-height: 1.6;
+            overflow-x: hidden;
+            position: relative;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 80px 15px 20px;
+            position: relative;
+            z-index: 2;
+        }
+        /* Навигация */
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background: rgba(20, 20, 20, 0.8);
+            backdrop-filter: blur(10px);
+            padding: 15px 0;
+            z-index: 10;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+        }
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+        }
+        nav li {
+            margin: 0 20px;
+        }
+        nav a {
+            color: #00d4ff;
+            text-decoration: none;
+            font-weight: 500;
+            text-transform: uppercase;
+            transition: all 0.3s ease;
+        }
+        nav a:hover {
+            color: #ff4081;
+            text-shadow: 0 0 10px rgba(255, 64, 129, 0.7);
+        }
+        /* Заголовок */
+        h1 {
+            font-size: 4em;
+            color: #00d4ff;
+            text-align: center;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            text-shadow: 0 0 30px rgba(0, 212, 255, 0.8);
+            margin-bottom: 60px;
+            animation: fadeInDown 1.5s ease-out, glow 2s infinite alternate;
+        }
+        h2 {
+            font-size: 2.2em;
+            color: #ff4081;
+            background: rgba(255, 64, 129, 0.15);
+            padding: 15px 25px;
+            border-radius: 12px;
+            margin: 60px 0 30px;
+            box-shadow: 0 0 20px rgba(255, 64, 129, 0.4);
+            animation: slideInLeft 1s ease-out;
+        }
+        .warning {
+            background: rgba(20, 20, 20, 0.75);
+            backdrop-filter: blur(12px);
+            padding: 30px;
+            border-radius: 15px;
+            border: 1px solid rgba(255, 64, 129, 0.3);
+            margin-bottom: 50px;
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.6);
+            animation: fadeInUp 1.2s ease-out;
+        }
+        .warning p {
+            font-size: 1.1em;
+            margin-bottom: 15px;
+        }
+        .warning strong {
+            color: #ff4081;
+        }
+        ul {
+            list-style: none;
+        }
+        li {
+            background: rgba(30, 30, 30, 0.65);
+            backdrop-filter: blur(10px);
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 12px;
+            border: 1px solid rgba(0, 212, 255, 0.25);
+            transition: all 0.4s ease;
+            animation: slideInUp 0.6s ease-out forwards;
+            transform: translateZ(0);
+        }
+        li:hover {
+            transform: translateY(-10px) scale(1.02);
+            box-shadow: 0 20px 40px rgba(0, 212, 255, 0.4);
+            border-color: #00d4ff;
+        }
+        li a {
+            color: #00d4ff;
+            font-weight: 500;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+        li a:hover {
+            color: #ff4081;
+            text-shadow: 0 0 10px rgba(255, 64, 129, 0.7);
+        }
+        .btn {
+            display: inline-block;
+            padding: 12px 30px;
+            background: linear-gradient(45deg, #00d4ff, #ff4081);
+            color: #fff;
+            font-weight: 600;
+            text-transform: uppercase;
+            border-radius: 30px;
+            margin-left: 15px;
+            text-decoration: none;
+            transition: all 0.4s ease;
+            box-shadow: 0 5px 15px rgba(0, 212, 255, 0.5);
+        }
+        .btn:hover {
+            background: linear-gradient(45deg, #ff4081, #00d4ff);
+            box-shadow: 0 10px 25px rgba(255, 64, 129, 0.7);
+            transform: scale(1.08);
+        }
+        /* Частицы и фон */
+        .bg-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(circle, rgba(0, 212, 255, 0.08) 0%, rgba(0, 0, 0, 0.9) 80%);
+            z-index: -1;
+            pointer-events: none;
+        }
+        .particles {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 0;
+            pointer-events: none;
+        }
+        .particle {
+            position: absolute;
+            width: 4px;
+            height: 4px;
+            background: rgba(0, 212, 255, 0.5);
+            border-radius: 50%;
+            animation: float 10s infinite ease-in-out;
+        }
+        /* Анимации */
+        @keyframes fadeInDown {
+            from { opacity: 0; transform: translateY(-50px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(50px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes slideInLeft {
+            from { opacity: 0; transform: translateX(-50px); }
+            to { opacity: 1; transform: translateX(0); }
+        }
+        @keyframes slideInUp {
+            from { opacity: 0; transform: translateY(40px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes glow {
+            from { text-shadow: 0 0 10px rgba(0, 212, 255, 0.5); }
+            to { text-shadow: 0 0 30px rgba(0, 212, 255, 0.9); }
+        }
+        @keyframes float {
+            0% { transform: translate(0, 0); opacity: 0.2; }
+            50% { transform: translate(20px, -30px); opacity: 0.6; }
+            100% { transform: translate(0, 0); opacity: 0.2; }
+        }
+        /* Адаптивность */
+        @media (max-width: 768px) {
+            h1 { font-size: 2.5em; }
+            h2 { font-size: 1.8em; }
+            li { padding: 15px; }
+            .btn { padding: 10px 20px; font-size: 0.9em; }
+            nav ul { flex-wrap: wrap; }
+            nav li { margin: 10px 15px; }
+        }
+        @media (max-width: 480px) {
+            h1 { font-size: 2em; margin-bottom: 40px; }
+            h2 { font-size: 1.5em; margin: 40px 0 20px; }
+            li { padding: 12px; margin-bottom: 15px; }
+            .btn { padding: 8px 15px; font-size: 0.8em; margin-left: 10px; }
+            .warning p { font-size: 1em; }
+            nav li { margin: 8px 10px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="bg-overlay"></div>
+    <div class="particles" id="particles"></div>
+    <nav>
+        <ul>
+            <li><a href="#top-bots">Топ ботов</a></li>
+            <li><a href="#phone-info">По номерам</a></li>
+            <li><a href="#telegram-id">Telegram ID</a></li>
+            <li><a href="#vk-deanon">ВКонтакте</a></li>
+            <li><a href="#social-networks">Соцсети</a></li>
+            <li><a href="#car-owners">Автовладельцы</a></li>
+            <li><a href="#useful-bots">Полезное</a></li>
+            <li><a href="#web-services">Веб-сервисы</a></li>
+            <li><a href="#osint-software">Софт</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <h1>Топ ботов для пробива в Telegram</h1>
+
+        <div class="warning">
+            <p><strong>Внимание!</strong> Несанкционированный сбор личной информации нарушает закон “<strong>О персональных данных</strong>” и может подпадать под статью 137 УК РФ “<strong>Нарушение неприкосновенности частной жизни</strong>”.</p>
+            <p>Автор и админы не несут ответственности за использование этой инфы. Всё только для ознакомления.</p>
+            <a href="#top-bots" class="btn">К ботам</a>
+        </div>
+
+        <h2 id="top-bots">Топ ботов пробива</h2>
+        <ul>
+            <li><a href="https://t.me/leakinfos_bot" target="_blank">LeakedInfoBot</a> — лучший бот для поиска информации о физических и юридических лицах. Доступ к госбазам, взломанным и слитым базам, соцсетям, доставкам, авиаперелетам. Поиск в 30+ странах. <a href="https://t.me/leakinfos_bot" class="btn">Запустить</a></li>
+            <li><a href="https://t.me/UsersBdoxBot" target="_blank">UsersBoxBot</a> — мощный бот для поиска по утечкам. ФИО, ник, телефон, email, соцсети. Базы всех известных сливов. 7 дней бесплатно. <a href="https://t.me/UsersBdoxBot" class="btn">Запустить</a></li>
+            <li><a href="https://t.me/Quick_OSINT000bot" target="_blank">Quick OSINT</a> — ветеран деанона. Поиск по телефону, карте, Telegram, местоположению, авто, email, долгам, паспорту, СНИЛС. 2 пробива бесплатно. <a href="https://t.me/Quick_OSINT000bot" class="btn">Запустить</a></li>
+            <li><a href="https://telegram.me/Zernerdas_bot" target="_blank">Zernerda</a> — большая база слитых данных. Пробив по Twitter, email, телефону, авто, ФИО, IP. 1 день бесплатно. <a href="https://telegram.me/Zernerdas_bot" class="btn">Запустить</a></li>
+            <li><a href="https://telegram.me/Dyxless0bot" target="_blank">Dyxless</a> — инфа по людям (телефон, email, соцсети, дата рождения), авто (госномер, VIN), недвижимости (адрес, кадастр). Поиск по компаниям. <a href="https://telegram.me/Dyxless0bot" class="btn">Запустить</a></li>
+            <li><a href="https://telegram.me/OpenLoad_Bot" target="_blank">OPENLOAD Bot</a> — полуавтоматический комплекс для OSINT. Поиск по телефонам, утечкам, сканирование веб-уязвимостей. <a href="https://telegram.me/OpenLoad_Bot" class="btn">Запустить</a></li>
+            <li><a href="https://bit.ly/3WFAsL3" target="_blank">PasswordSearchBot</a> — бесплатный поиск пароля от email из утечек. <a href="https://bit.ly/3WFAsL3" class="btn">Запустить</a></li>
+            <li><a href="https://t.me/detektivnabot" target="_blank">Detectiva</a> — пробив номеров, email, Telegram, соцсетей. 6 типов поиска. <a href="https://t.me/detektivnabot" class="btn">Запустить</a></li>
+            <li><a href="https://telegram.me/karma_cybersec_bot" target="_blank">KarmaCybersec</a> — бесплатный OSINT по открытым источникам. Ники, ID, GSM, IP, ВК. <a href="https://telegram.me/karma_cybersec_bot" class="btn">Запустить</a></li>
+            <li><a href="https://t.me/clerksecretbot" target="_blank">ClerkBot</a> — поиск по номеру и username Telegram. Данные автовладельцев (ФИО, VIN). <a href="https://t.me/clerksecretbot" class="btn">Запустить</a></li>
+            <li><a href="https://t.me/Search_HimerazBot" target="_blank">HimeraSearch</a> — OSINT и HUMINT. Поиск по телефону, email, авто, судам, фото. <a href="https://t.me/Search_HimerazBot" class="btn">Запустить</a></li>
+            <li><a href="https://bit.ly/3zIOXG2" target="_blank">Blackat Search</a> — поиск из открытых и закрытых источников. Пробный период 30 часов. <a href="https://bit.ly/3zIOXG2" class="btn">Запустить</a></li>
+            <li><a href="https://t.me/osint_maigret_bot" target="_blank">Maigret OSINT bot</a> — проверка username на 1366 сайтах. <a href="https://t.me/osint_maigret_bot" class="btn">Запустить</a></li>
+            <li><a href="https://t.me/Vektortorbot" target="_blank">VektorInfo</a> — поиск по ФИО, номеру, email, ID. Доступ к базам ГИБДД, РСА. <a href="https://t.me/Vektortorbot" class="btn">Запустить</a></li>
+            <li><a href="https://t.me/OpenDataUABot" target="_blank">OpenDataUABot</a> — бот из Украины для поиска о людях и компаниях. <a href="https://t.me/OpenDataUABot" class="btn">Запустить</a></li>
+            <li><a href="https://t.me/Search_firm_bot" target="_blank">Search_firm_bot</a> — поиск по организациям, банкам, почтовому индексу. <a href="https://t.me/Search_firm_bot" class="btn">Запустить</a></li>
+            <li><a href="https://t.me/AgentFNS_bot" target="_blank">AgentFNS_Bot</a> — бесплатная проверка контрагентов по ИНН или ОГРН. <a href="https://t.me/AgentFNS_bot" class="btn">Запустить</a></li>
+            <li><a href="https://t.me/egrul_bot" target="_blank">egrul_bot</a> — быстрый сервис проверки контрагентов. Бесплатно. <a href="https://t.me/egrul_bot" class="btn">Запустить</a></li>
+            <li><a href="https://t.me/ShtrafKZBot" target="_blank">ShtrafKZBot</a> — проверка штрафов, налогов, пени по ИИН/БИН, ПДД. <a href="https://t.me/ShtrafKZBot" class="btn">Запустить</a></li>
+        </ul>
+
+        <h2 id="phone-info">Информация по номерам телефонов</h2>
+        <ul>
+            <li><a href="https://telegram.me/only_good_contacts_bot" target="_blank">Real GetContact</a> — бесплатный поиск по номерам. <a href="https://telegram.me/only_good_contacts_bot" class="btn">Запустить</a></li>
+            <li><a href="https://t.me/data1eaks_xbot" target="_blank">DataLeaksBot</a> — проверка утечек номеров и email. <a href="https://t.me/data1eaks_xbot" class="btn">Запустить</a></li>
+            <li><a href="https://telegram.me/TrueCaller_Z_Bot" target="_blank">TrueCallerBot</a> — как номер записан у других. Бесплатно. <a href="https://telegram.me/TrueCaller_Z_Bot" class="btn">Запустить</a></li>
+            <li><a href="https://telegram.me/Leak_SSINTbot" target="_blank">Leak OSINT</a> — проверка утечек номера. Бесплатно неделю. <a href="https://telegram.me/Leak_SSINTbot" class="btn">Запустить</a></li>
+            <li><a href="https://t.me/MNProbot" target="_blank">bmi_np_bot</a> — определение оператора и данных по номеру. <a href="https://t.me/MNProbot" class="btn">Запустить</a></li>
+            <li><a href="https://telegram.me/getairplane_bot" target="_blank">Getairplane</a> — инфа о полетах по номеру за 20 лет (до 3 строк). <a href="https://telegram.me/getairplane_bot" class="btn">Запустить</a></li>
+            <li><a href="https://t.me/mnp_bot" target="_blank">mnp_bot</a> — оператор и регион номера. Бесплатно. <a href="https://t.me/mnp_bot" class="btn">Запустить</a></li>
+        </ul>
+
+        <h2 id="telegram-id">Пробив ID и аккаунтов Telegram</h2>
+        <ul>
+            <li><a href="https://telegram.me/telesint_2025_bot" target="_blank">TeleSINT</a> — инфа о юзерах и группах Telegram. 366 млн юзеров, 3 запроса бесплатно. <a href="https://telegram.me/telesint_2025_bot" class="btn">Запустить</a></li>
+            <li><a href="https://telegram.me/TeleScans_Bot" target="_blank">Telescan</a> — поиск людей в Telegram. История групп, сообщений, имен. <a href="https://telegram.me/TeleScans_Bot" class="btn">Запустить</a></li>
+            <li><a href="https://telegram.me/tgscan_clone_robot" target="_blank">TgScanRobot</a> — поиск групп Telegram, в которых состоит человек. Платный. <a href="https://telegram.me/tgscan_clone_robot" class="btn">Запустить</a></li>
+            <li><a href="https://telegram.me/FunStatBot0bot?start=0101F80C2D1500000000" target="_blank">FunstatBot</a> — история изменений ID, анализ активности. <a href="https://telegram.me/FunStatBot0bot?start=0101F80C2D1500000000" class="btn">Запустить</a></li>
+            <li><a href="https://t.me/username_to_id_bot" target="_blank">username_to_id_bot</a> — получение ID юзера, чата, канала. Бесплатно. <a href="https://t.me/username_to_id_bot" class="btn">Запустить</a></li>
+            <li><a href="https://t.me/usinfobot" target="_blank">UsInfoBot</a> — имя и ссылка по ID в inline-режиме. <a href="https://t.me/usinfobot" class="btn">Запустить</a></li>
+            <li><a href="https://telegram.me/unamer_bot" target="_blank">Unamer</a> — история владения никнеймами. Бесплатно. <a href="https://telegram.me/unamer_bot" class="btn">Запустить</a></li>
+            <li><a href="https://t.me/TuriBot" target="_blank">TuriBot</a> — имя по ID через /resolve. <a href="https://t.me/TuriBot" class="btn">Запустить</a></li>
+            <li><a href="https://telegram.me/getchatlistbot" target="_blank">getChatList</a> — чат-группы юзера Telegram. Бесплатно. <a href="https://telegram.me/getchatlistbot" class="btn">Запустить</a></li>
+            <li><a href="https://telegram.me/tgdb_bot" target="_blank">Telegram DB</a> — поиск общедоступных каналов и групп. <a href="https://telegram.me/tgdb_bot" class="btn">Запустить</a></li>
+            <li><a href="https://t.me/regdate_clone_bot" target="_blank">RegDateBot</a> — примерная дата регистрации по ID. <a href="https://t.me/regdate_clone_bot" class="btn">Запустить</a></li>
+            <li><a href="https://t.me/creationdatebot" target="_blank">creationdatebot</a> — примерная дата создания по username или ID. <a href="https://t.me/creationdatebot" class="btn">Запустить</a></li>
+            <li><a href="https://t.me/SangMataInfo_bot" target="_blank">SangMataInfo_bot</a> — история смены никнеймов. <a href="https://t.me/SangMataInfo_bot" class="btn">Запустить</a></li>
+            <li><a href="https://t.me/SangMata_beta_bot" target="_blank">SangMata (beta)</a> — история изменения имени по ID. <a href="https://t.me/SangMata_beta_bot" class="btn">Запустить</a></li>
+            <li><a href="https://t.me/ibhld_bot" target="_blank">Insight</a> — анализ интересов по подпискам. Несколько запросов бесплатно. <a href="https://t.me/ibhld_bot" class="btn">Запустить</a></li>
+            <li><a href="https://t.me/SPOwnerBot" target="_blank">FindStickerCreator</a> — ID создателя стикеров по стикеру. <a href="https://t.me/SPOwnerBot" class="btn">Запустить</a></li>
+            <li><a href="https://t.me/ChatSearchRobot" target="_blank">ChatSearchRobot</a> — поиск схожих чатов (709 тыс. чатов ВК). <a href="https://t.me/ChatSearchRobot" class="btn">Запустить</a></li>
+            <li><a href="https://t.me/surftg_bot" target="_blank">Surftg_bot</a> — поиск сообщений в Telegram. <a href="https://t.me/surftg_bot" class="btn">Запустить</a></li>
+            <li><a href="https://telegram.me/searchforchatsbot" target="_blank">Searchforchats</a> — поиск в чатах Telegram по ключевым словам. <a href="https://telegram.me/searchforchatsbot" class="btn">Запустить</a></li>
+            <li><a href="https://t.me/MotherSearchBot" target="_blank">MotherSearchBot</a> — аналог Google для Telegram. <a href="https://t.me/MotherSearchBot" class="btn">Запустить</a></li>
+            <li><a href="https://bit.ly/4frZwhc" target="_blank">ParserPro</a> — платный парсинг аудитории из чатов. <a href="https://bit.ly/4frZwhc" class="btn">Запустить</a></li>
+            <li><a href="https://bit.ly/3Ygsjij" target="_blank">Parsetg</a> — платный парсинг аудитории из групп Telegram. <a href="https://bit.ly/3Ygsjij" class="btn">Запустить</a></li>
+        </ul>
+
+        <h2 id="vk-deanon">Деанон пользователей ВКонтакте</h2>
+        <ul>
+            <li><a href="https://telegra.ph/Vechnaya-ssylka-na-Universal-Search-Bot-07-21-2" target="_blank">Universal Search</a> — открытая инфа по номеру, email, госномеру, имени, IP, фото, ID. <a href="https://telegra.ph/Vechnaya-ssylka-na-Universal-Search-Bot-07-21-2" class="btn">Запустить</a></li>
+            <li><a href="https://telegram.me/social_graph_osint_bot" target="_blank">Social Graph</a> — граф друзей по публичному профилю ВК. <a href="https://telegram.me/social_graph_osint_bot" class="btn">Запустить</a></li>
+            <li><a href="https://telegram.me/FindNameVk_bot" target="_blank">FindNameVk</a> — история изменения фамилий и дата создания профиля ВК. <a href="https://telegram.me/FindNameVk_bot" class="btn">Запустить</a></li>
+            <li><a href="https://t.me/VKHistoryRobot" target="_blank">VKHistoryRobot</a> — прошлые версии профиля ВК. Бесплатно. <a href="https://t.me/VKHistoryRobot" class="btn">Запустить</a></li>
+            <li><a href="https://telegram.me/vkfindfaces_bot" target="_blank">VKFind Face</a> — поиск профиля ВК по фото. От 10 до 400 рублей. <a href="https://telegram.me/vkfindfaces_bot" class="btn">Запустить</a></li>
+            <li><a href="https://telegram.me/dreamfuckedbot" target="_blank">Dreamer</a> — поиск по номеру, email, facebook-id, vk-id. <a href="https://telegram.me/dreamfuckedbot" class="btn">Запустить</a></li>
+            <li><a href="https://t.me/InfoVkUser_bot" target="_blank">InfoVkUser_bot</a> — анализ друзей профиля ВК (ВУЗы, города). <a href="https://t.me/InfoVkUser_bot" class="btn">Запустить</a></li>
+            <li><a href="https://t.me/VKUserInfo_bot" target="_blank">VKUserInfo_bot</a> — полная инфа о профиле ВК. <a href="https://t.me/VKUserInfo_bot" class="btn">Запустить</a></li>
+            <li><a href="https://telegram.me/similarfacesBot" target="_blank">SimilarFaces</a> — бесплатный поиск по фото в ВК. <a href="https://telegram.me/similarfacesBot" class="btn">Запустить</a></li>
+        </ul>
+
+        <h2 id="social-networks">Поиск информации по другим соц-сетям</h2>
+        <ul>
+            <li><a href="https://telegram.me/discordsensorbot" target="_blank">Discord Sensor</a> — данные о Discord-аккаунтах (аватары, серверы, друзья). <a href="https://telegram.me/discordsensorbot" class="btn">Запустить</a></li>
+            <li><a href="https://telegram.me/InstaBot" target="_blank">InstaBot</a> — скачивание медиа из Instagram. <a href="https://telegram.me/InstaBot" class="btn">Запустить</a></li>
+            <li><a href="https://t.me/SaveYoutubeBot" target="_blank">SaveYoutubeBot</a> — поиск и скачивание роликов из YouTube. <a href="https://t.me/SaveYoutubeBot" class="btn">Запустить</a></li>
+            <li><a href="https://t.me/getfb_bot" target="_blank">getfb_bot</a> — страница Facebook по номеру. Бесплатно. <a href="https://t.me/getfb_bot" class="btn">Запустить</a></li>
+        </ul>
+
+        <h2 id="car-owners">Поиск информации о автовладельцах</h2>
+        <ul>
+            <li><a href="https://bit.ly/4cJjRg8" target="_blank">AVinfoBot</a> — история авто по госномеру, VIN, телефону. От 400 до 20 000 рублей в год. <a href="https://bit.ly/4cJjRg8" class="btn">Запустить</a></li>
+            <li><a href="https://vin-01.ru/" target="_blank">VIN01Bot</a> — пробив по VIN и госномеру, ОСАГО, такси, ГИБДД. <a href="https://vin-01.ru/" class="btn">Запустить</a></li>
+            <li><a href="https://telegram.me/ABTOGRAMBOT" target="_blank">avtogram_bot</a> — платные отчеты по VIN или госномеру от 400 рублей. <a href="https://telegram.me/ABTOGRAMBOT" class="btn">Запустить</a></li>
+            <li><a href="https://t.me/avtocodbot" target="_blank">avtocodbot</a> — платная инфа об авто по VIN или госномеру. <a href="https://t.me/avtocodbot" class="btn">Запустить</a></li>
+            <li><a href="https://t.me/Antiparkongogobot" target="_blank">AntiParkonBot</a> — бесплатное оповещение об эвакуации и нарушителях ПДД. <a href="https://t.me/Antiparkongogobot" class="btn">Запустить</a></li>
+            <li><a href="https://t.me/noblackAuto_bot" target="_blank">NEUROAUTOSEARCH</a> — поиск авто с нейронными сетями. <a href="https://t.me/noblackAuto_bot" class="btn">Запустить</a></li>
+            <li><a href="https://t.me/EasyVINbot" target="_blank">EasyVIN</a> — дешевая проверка истории авто по VIN или госномеру. <a href="https://t.me/EasyVINbot" class="btn">Запустить</a></li>
+            <li><a href="https://t.me/avtonomerbot" target="_blank">AvtoNomer</a> — фото авто по номерам на platesmania.com. <a href="https://t.me/avtonomerbot" class="btn">Запустить</a></li>
+        </ul>
+
+        <h2 id="useful-bots">Полезные боты</h2>
+        <ul>
+            <li><a href="https://t.me/WhoisDomBot" target="_blank">WhoisDomBot</a> — Whois-инфа для доменов и IP. <a href="https://t.me/WhoisDomBot" class="btn">Запустить</a></li>
+            <li><a href="https://t.me/ip_score_checker_bot?start=6Z6Z0484" target="_blank">IP Score Checker</a> — данные об IP, геолокация, оценка мошенничества. <a href="https://t.me/ip_score_checker_bot?start=6Z6Z0484" class="btn">Запустить</a></li>
+            <li><a href="https://t.me/geomacbot" target="_blank">GeoMacFinder</a> — местоположение Wi-Fi точки по MAC-адресу. <a href="https://t.me/geomacbot" class="btn">Запустить</a></li>
+            <li><a href="https://t.me/CryptoBot?start=r-725962-market" target="_blank">CryptoBot</a> — анонимный криптокошелек в Telegram. <a href="https://t.me/CryptoBot?start=r-725962-market" class="btn">Запустить</a></li>
+            <li><a href="https://t.me/dCallsBot?start=hV9uDSjF" target="_blank">dCallsBot</a> — анонимные звонки, прием SMS, покупка eSIM. <a href="https://t.me/dCallsBot?start=hV9uDSjF" class="btn">Запустить</a></li>
+        </ul>
+
+        <h2 id="web-services">Веб-сервисы для поиска и пробива</h2>
+        <ul>
+            <li><a href="http://intelx.io/" target="_blank">IntelligenceX</a> — огромная база утечек. 2000 евро/год, пробный период 7 дней. <a href="http://intelx.io/" class="btn">Открыть</a></li>
+            <li><a href="https://epieos.com/" target="_blank">Epieos</a> — OSINT для Gmail, Signal, Telegram, Skype. <a href="https://epieos.com/" class="btn">Открыть</a></li>
+            <li><a href="http://emailsherlock.com/" target="_blank">Emailsherlock</a> — поиск по email, привязка к сайтам и соцсетям. <a href="http://emailsherlock.com/" class="btn">Открыть</a></li>
+            <li><a href="https://account.lampyre.io/data-lookup" target="_blank">Lampyre</a> — проверка email и телефона, отчеты в docx. <a href="https://account.lampyre.io/data-lookup" class="btn">Открыть</a></li>
+            <li><a href="http://hunter.io/" target="_blank">Hunter</a> — поиск корпоративных email по домену. <a href="http://hunter.io/" class="btn">Открыть</a></li>
+            <li><a href="https://usersearch.org/" target="_blank">UserSearch</a> — поиск по имени или email в 600+ соцсетях. <a href="https://usersearch.org/" class="btn">Открыть</a></li>
+            <li><a href="https://whatsmyname.app/" target="_blank">WhatsMyName</a> + <a href="http://namecheckup.com/" target="_blank">NameCheckUp</a> + <a href="http://instantusername.com/" target="_blank">InstantUserName</a> — поиск никнейма по сайтам. <a href="https://whatsmyname.app/" class="btn">Открыть</a></li>
+            <li><a href="http://dehashed.com/" target="_blank">Dehashed</a> — поиск по взломанным данным (IP, email, пароли). <a href="http://dehashed.com/" class="btn">Открыть</a></li>
+            <li><a href="https://leakcheck.io/?ref=387081" target="_blank">LeakCheck.io</a> — проверка утечек по email. <a href="https://leakcheck.io/?ref=387081" class="btn">Открыть</a></li>
+            <li><a href="https://synapsint.com/" target="_blank">Synapsint</a> — OSINT-поиск по домену, email, телефону, IP. <a href="https://synapsint.com/" class="btn">Открыть</a></li>
+            <li><a href="https://sociallinks.io/" target="_blank">SocialLinks</a> — сбор данных с общедоступных сайтов. <a href="https://sociallinks.io/" class="btn">Открыть</a></li>
+            <li><a href="https://www.shodan.io/" target="_blank">Shodan</a> — поиск активов, подключенных к сети. <a href="https://www.shodan.io/" class="btn">Открыть</a></li>
+            <li><a href="http://spyse.com/" target="_blank">Spyse</a> — техинфа о доменах (1,2 млрд). <a href="http://spyse.com/" class="btn">Открыть</a></li>
+            <li><a href="https://searchcode.com/" target="_blank">Searchcode</a> — поиск кода и документации (20 млрд строк). <a href="https://searchcode.com/" class="btn">Открыть</a></li>
+            <li>Сервисы для идентификации номера телефона:
+                <ul>
+                    <li><a href="http://getcontact.com/" target="_blank">getcontact.com</a> <a href="http://getcontact.com/" class="btn">Открыть</a></li>
+                    <li><a href="http://numbuster.com/" target="_blank">numbuster.com</a> <a href="http://numbuster.com/" class="btn">Открыть</a></li>
+                    <li><a href="http://sync.me/" target="_blank">sync.me</a> <a href="http://sync.me/" class="btn">Открыть</a></li>
+                    <li><a href="http://truecaller.com/" target="_blank">truecaller.com</a> <a href="http://truecaller.com/" class="btn">Открыть</a></li>
+                    <li><a href="http://neberitrubku.ru/" target="_blank">neberitrubku.ru</a> <a href="http://neberitrubku.ru/" class="btn">Открыть</a></li>
+                    <li><a href="http://kaspersky.ru/caller-id" target="_blank">kaspersky.ru/caller-id</a> <a href="http://kaspersky.ru/caller-id" class="btn">Открыть</a></li>
+                    <li><a href="http://yandex.ru/promo/alice/callerid" target="_blank">yandex.ru/promo/alice/callerid</a> <a href="http://yandex.ru/promo/alice/callerid" class="btn">Открыть</a></li>
+                </ul>
+            </li>
+            <li><a href="https://app.osintracker.com/" target="_blank">OSINTTracker</a> — визуализация расследований. Бесплатно. <a href="https://app.osintracker.com/" class="btn">Открыть</a></li>
+            <li><a href="https://app.netlas.io/asd/" target="_blank">Netlas</a> — визуализация связей (домены, телефоны, email). <a href="https://app.netlas.io/asd/" class="btn">Открыть</a></li>
+            <li><a href="https://www.aware-online.com/en/category/telegram-en/" target="_blank">Aware Online</a> — поиск групп Telegram по местоположению. <a href="https://www.aware-online.com/en/category/telegram-en/" class="btn">Открыть</a></li>
+            <li><a href="https://telegcrack.com/" target="_blank">Telegcrack</a> — поиск в постах Telegram каналов. <a href="https://telegcrack.com/" class="btn">Открыть</a></li>
+            <li><a href="http://telemetr.me/" target="_blank">Telemetr.me</a> — поиск в 250+ млн постах Telegram, аналитика. <a href="http://telemetr.me/" class="btn">Открыть</a></li>
+            <li><a href="http://telegramdb.org/" target="_blank">Telemetr.io</a> — поиск в постах Telegram + аналитика. <a href="http://telegramdb.org/" class="btn">Открыть</a></li>
+            <li><a href="https://tgstat.ru/" target="_blank">TgStat</a> — поиск в постах и чатах Telegram, сохраняет удаленное. <a href="https://tgstat.ru/" class="btn">Открыть</a></li>
+            <li><a href="http://telegramdb.org/" target="_blank">TelegramDB</a> — ссылки, фото, описание групп/каналов. <a href="http://telegramdb.org/" class="btn">Открыть</a></li>
+            <li><a href="https://cse.google.com/cse?q=+\&cx=006368593537057042503%3Aefxu7xprihg" target="_blank">Telegago</a> — поиск упоминаний в Telegram. <a href="https://cse.google.com/cse?q=+\&cx=006368593537057042503%3Aefxu7xprihg" class="btn">Открыть</a></li>
+            <li><a href="https://lyzem.com/" target="_blank">Lyzem</a> — поисковая система для Telegram. <a href="https://lyzem.com/" class="btn">Открыть</a></li>
+        </ul>
+
+        <h2 id="osint-software">Софт для OSINT</h2>
+        <ul>
+            <li><a href="http://maltego.com/" target="_blank">Maltego</a> — анализ и визуализация данных из соцсетей. <a href="http://maltego.com/" class="btn">Открыть</a></li>
+            <li><a href="http://spiderfoot.net/" target="_blank">SpiderFoot</a> — OSINT-платформа для оценки безопасности. <a href="http://spiderfoot.net/" class="btn">Открыть</a></li>
+            <li><a href="http://geeksforgeeks.org/python-theharvester-how-to-use-it/" target="_blank">theHarvester</a> — разведка перед тестированием на проникновение. <a href="http://geeksforgeeks.org/python-theharvester-how-to-use-it/" class="btn">Открыть</a></li>
+            <li><a href="http://geocreepy.com/" target="_blank">Creepy</a> — сбор геолокации из соцсетей. <a href="http://geocreepy.com/" class="btn">Открыть</a></li>
+            <li><a href="http://github.com/lanmaster53/recon-ng" target="_blank">Recon-ng</a> — веб-разведка по соцсетям. <a href="http://github.com/lanmaster53/recon-ng" class="btn">Открыть</a></li>
+            <li><a href="http://tools.kali.org/information-gathering/metagoofil" target="_blank">Metagoofil</a> — сбор метаданных с веб-сайтов. <a href="http://tools.kali.org/information-gathering/metagoofil" class="btn">Открыть</a></li>
+            <li><a href="https://accentusoft.com/" target="_blank">LinkScope</a> — исследование объектов (email, сайты, крипта). <a href="https://accentusoft.com/" class="btn">Открыть</a></li>
+            <li><a href="https://github.com/soxoj/marple" target="_blank">Marple</a> — поиск аккаунтов по нику в 10+ системах. <a href="https://github.com/soxoj/marple" class="btn">Открыть</a></li>
+            <li><a href="https://github.com/cyb3rm4gus/telegram-filtered-chat-parser" target="_blank">FilteredChatParser</a> — парсинг сообщений Telegram-групп. <a href="https://github.com/cyb3rm4gus/telegram-filtered-chat-parser" class="btn">Открыть</a></li>
+            <li><a href="https://github.com/zqtay/Telegram-Message-Analyzer" target="_blank">Message Analyzer</a> — экспорт и анализ сообщений Telegram. <a href="https://github.com/zqtay/Telegram-Message-Analyzer" class="btn">Открыть</a></li>
+            <li><a href="https://github.com/pigpagnet/save-telegram-chat-history" target="_blank">Save Telegram Chat History</a> — сохранение истории чатов Telegram. <a href="https://github.com/pigpagnet/save-telegram-chat-history" class="btn">Открыть</a></li>
+            <li><a href="https://github.com/bellingcat/telegram-phone-number-checker" target="_blank">Bellingcat</a> — проверка номера телефона в Telegram. <a href="https://github.com/bellingcat/telegram-phone-number-checker" class="btn">Открыть</a></li>
+            <li><a href="https://github.com/andylvua/bibaandboba" target="_blank">BibaAndBoba</a> — анализ чатов Telegram и корреляций. <a href="https://github.com/andylvua/bibaandboba" class="btn">Открыть</a></li>
+            <li><a href="https://github.com/Alb-310/Geogramint" target="_blank">GeoGrammint</a> — местоположение юзеров Telegram на карте. <a href="https://github.com/Alb-310/Geogramint" class="btn">Открыть</a></li>
+            <li><a href="https://github.com/pielco11/telescan" target="_blank">Telescan</a> — поиск юзеров в Telegram-группах. <a href="https://github.com/pielco11/telescan" class="btn">Открыть</a></li>
+            <li><a href="https://github.com/cqcore/Telegram-OSINT" target="_blank">Telegram OSINT</a> — подборка инструментов для Telegram. <a href="https://github.com/cqcore/Telegram-OSINT" class="btn">Открыть</a></li>
+        </ul>
+    </div>
+
+    <script>
+        // Генерация частиц
+        const particlesContainer = document.getElementById('particles');
+        for (let i = 0; i < 50; i++) {
+            const particle = document.createElement('div');
+            particle.className = 'particle';
+            particle.style.left = Math.random() * 100 + 'vw';
+            particle.style.top = Math.random() * 100 + 'vh';
+            particle.style.animationDelay = Math.random() * 5 + 's';
+            particlesContainer.appendChild(particle);
+        }
+
+        // Плавный скролл для навигации
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                target.scrollIntoView({ behavior: 'smooth' });
+            });
+        });
+
+        // Параллакс-эффект при скролле
+        window.addEventListener('scroll', () => {
+            const scrollPos = window.scrollY;
+            document.querySelectorAll('li').forEach(item => {
+                const speed = 0.1;
+                item.style.transform = `translateY(${scrollPos * speed}px) scale(1.02)`;
+            });
+        });
+    </script>
+</body>
+</html>
